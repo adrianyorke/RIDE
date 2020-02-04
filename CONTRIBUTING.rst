@@ -1,25 +1,32 @@
 Contribution guidelines
 =======================
+
 Thank you for considering contributing to the `RIDE project`_.
 
 RIDE is a development environment for `Robot Framework`_ test cases.
 
-These guidelines instruct how to submit issues and contribute code or documentation
-to the `RIDE project`_.  Other great ways to contribute include answering questions
-and participating discussion on `robotframework-users`_, relevant `Slack`_ channels
-(especially #ride and #ride-dev) and other forums as well as spreading the word
-about the framework one way or the other.
+These guidelines provide instructions explaining how to submit issues and contribute
+code or documentation to the `RIDE project`_.  Other great ways to contribute include
+answering questions and participating in discussion on `robotframework-users`_ lists,
+relevant `Slack`_ channels (especially #ride and #ride-dev) and other forums as well
+as spreading the word about RIDE and Robot Framework one way or another.
 
 These guidelines expect readers to have a basic knowledge about open source
 as well as why and how to contribute to open source projects. If you are
 totally new to these topics, it may be a good idea to look at the generic
 `Open Source Guides`_ first.
 
+.. contents::
+   :depth: 2
+   :local:
+
+
 Submitting issues
 -----------------
-Bugs and enhancements are tracked in the `issue tracker`_.
-If you are unsure if something is a bug or is a feature worth
-implementing, you can first ask on `robotframework-users`_ list. This and
+
+Bugs and enhancements are tracked using the `issue tracker`_.
+If you are unsure if something is a bug or feature worth
+implementing, you can first ask on `robotframework-users`_ list or #ride `Slack`_ channel. These and
 other similar forums, not the issue tracker, are also places where to ask
 general questions.
 
@@ -31,33 +38,40 @@ Reporting bugs
 ~~~~~~~~~~~~~~
 
 Explain the bug you have encountered so that others can understand it
-and preferably also reproduce it. Key things to have in good bug report:
+and preferably also reproduce it.
 
--  Python and wxPython version information
--  RIDE and Robot Framework version
+Key things to have in good bug report for RIDE include:
+
+-  Python and wxPython version information.
+-  RIDE and Robot Framework version.
+-  Operating system.
 -  Steps to reproduce the problem. With more complex problems it is
-   often a good idea to create a short, self contained, correct example
+   often a good idea to create a "Short, Self-Contained, Correct Example"
    `(SSCCE)`_.
 -  Possible error message and traceback.
 
   Note: all information in the issue tracker is public. Do not
-  include any confidential information there.
+  include any confidential or commercially sensitive information.
 
 Enhancement requests
 ~~~~~~~~~~~~~~~~~~~~
 
 Describe the new feature and use cases for it in as much detail as
-possible in an issue. Especially with larger enhancements, be prepared to
-contribute the code in form of a `Pull Request`_ as explained below or to
-pay someone for the work. Consider also would it be better to implement this
+possible by creating an issue using the `issue tracker`_.
+Especially with larger enhancements, be prepared to
+contribute the code in the form of a `Pull Request`_ as explained below or to
+pay someone to do this work. Consider also would it be better to implement this
 functionality as a separate project outside of RIDE.
+
+
+
 
 Code contributions
 ------------------
 
 If you have fixed a bug or implemented an enhancement, you can
-contribute your changes via GitHub's pull requests. This is not
-restricted to code, on the contrary, fixes and enhancements to
+contribute your changes via a GitHub `Pull Request`_. This is not
+restricted to code. On the contrary, fixes and enhancements to
 documentation\_ and tests\_ alone are also very valuable.
 
 Choosing something to work on
@@ -82,7 +96,7 @@ something to contribute:
 .. _help_wanted: https://github.com/robotframework/RIDE/issues?q=is%3Aopen+is%3Aissue+label%3A%22help_wanted%22
 
 Pull requests
--------------
+~~~~~~~~~~~~~
 
 On GitHub a `Pull Request`_ is the main mechanism to contribute code. They
 are easy to use both for the contributor and for person accepting the
@@ -103,17 +117,10 @@ the review process and makes the maintenance easier for the project administrato
 Generally it is recommended to do `git pull --rebase`  instead of the `git pull --merge`
 when there is need pull changes from upstream.
 
-
-
-
-
-
-
-
 https://wiki.wxpython.org/How%20to%20Learn%20wxPython
 
-Python Coding Style:
-====================
+Python Coding Style
+~~~~~~~~~~~~~~~~~~~
 
 In general, your Python code should be PEP-8/Flake8 compliant.  We will soon be implementing CI that will check compliance in this area so please save yourself refactoring effort and aim for full compliance.
 
@@ -125,11 +132,13 @@ In general, your Python code should be PEP-8/Flake8 compliant.  We will soon be 
 * Separate top-level function and class definitions with two blank lines.
 * Method definitions inside a class are surrounded by a single blank line.
 * Imports should "one per line" and grouped as follows:
+
   * Standard Library imports
   * Related third party imports
   * Local app/library specific imports.
 
-
+Different types of contributors
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 All contributors should familarise themselves with the existing wiki documentation:
 
@@ -148,22 +157,6 @@ Developer:
 2. Basic understanding of Python but perhaps beyond beginner level.  You are welcome to learn on this project.
 3. Good understandting of wxPython
 
-
-
-
-
-
-
-**Instant Communication** Join our #ride channel in Robot Framework Slack: https://robotframework.slack.com
-(Slack signup page: https://robotframework-slack-invite.herokuapp.com/)
-
-**Welcome to the development version of RIDE - next release will be version 2.0**
----------------------------------------------------------------------------------
-
-If you are looking for the latest released version, you can get the source code from **releases** or from branch **release/1.7.4.1**
-See the `release notes`_ for latest release version 1.7.4.1.
-
-**Version 1.7.4.1 was the last release supporting Python 2.7**
 
 
 
